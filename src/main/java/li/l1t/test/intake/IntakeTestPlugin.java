@@ -21,9 +21,7 @@ public class IntakeTestPlugin extends JavaPlugin {
         CommandsManager commandsManager = new CommandsManager(this);
         commandsManager.setLocale(Locale.ENGLISH);
         registerInjections();
-        commandsManager.getBuilderFor("test")
-                .withAliases("ptest")
-                .withDispatcherFor(new TestCommand())
+        commandsManager.startRegistration(new TestCommand(), "test", "ptest")
                 .withSubHandler(new DetachedCommand(), "detached")
                 .create()
                 .register();

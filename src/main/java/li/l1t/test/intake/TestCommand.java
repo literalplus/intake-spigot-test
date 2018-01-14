@@ -20,6 +20,6 @@ public class TestCommand {
     @Command(aliases = "poke", desc = "pokes somebody")
     public void poke(@Sender CommandSender sender, @OnlineSender CommandSender target) {
         sender.sendMessage("You poked "+target.getName());
-        target.sendMessage("You were porked by"+sender.getName());
+        target.sendMessage("You were poked by "+sender.getName());
     }
 }
