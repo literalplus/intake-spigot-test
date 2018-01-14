@@ -1,0 +1,5 @@
+name: IntakeTest
+version: 0.1-SNAPSHOT
+depend: [XYC-Intake]
+
+main: li.l1t.test.intake.IntakeTestPlugin
